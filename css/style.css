@@ -1,6 +1,6 @@
 body {
- font-family: 'Raleway', sans-serif;
- margin: 0;  
+    font-family: 'Raleway', sans-serif;
+    margin: 0;  
 }
  /*Header//////////////////////*/
 header {
@@ -37,7 +37,7 @@ ul.main_menu li {
 }
 
 ul.sub_menu{
-    /*display: none;*/
+    display: none; /*chowanie menu/////////////////*/
 }
 ul.sub_menu li {
     display: block;
@@ -50,7 +50,53 @@ ul.sub_menu li {
     height: 504px;
     background-color: #f7f7f7;
     background-image: linear-gradient(180deg, #f7f7f7, #d1d0d6);
+    position: relative;
     
+}
+
+.article_1 >img {
+    height: 341px;
+    position: absolute;
+    right: auto; left: 200px;
+    top: 90px;
+    
+}
+.article_1 >section {
+    width: 474px;
+    height: 341px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: auto; right: 200px;
+    top: 90px;
+    
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    }
+h4 >span {
+    color: mediumaquamarine;
+    font-weight: 600; 
+}
+
+.article_1 >p {
+    font-size: 14px;
+    display: inline-block;
+    width: 180px;
+}
+
+section input {
+    background-color: mediumaquamarine;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    width:35%;
+    height: 40px;
+    box-shadow: none;
     
 }
 
