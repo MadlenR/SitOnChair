@@ -224,14 +224,17 @@ h6 {
     width: 43%;
     margin-top: 5px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 .in_article_2 p:nth-child(1) {
     font-weight: 600;
+    color: black;
    
 }
 .in_article_2 p {
     margin-left: 10px;
     margin-right: 10px;
+    color: gray;
 }
 
 /*Article 3//////////////////////*/
@@ -306,9 +309,30 @@ fieldset button  {
     padding: 10 10 10 10;
     margin-top: 40px;
     float:left;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 /*FOOTER//////////////////////*/
+footer {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer >p >span {
+    font-weight: 700;
+}
+
+footer > p, footer > section {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    color: #c4c4c4;
+}
+footer > p {
+    margin-left: 80px;
+}
+footer > section {
+    margin-left: 250px;
+}
 
