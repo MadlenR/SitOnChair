@@ -8,7 +8,7 @@ body {
 
 input, button, textarea {
    font: 20px Raleway;/*tym pozbyłam się stylowania domyślnego Arialem dla przycisków i pól. Hurra! :) */
-    box-shadow: none;
+    border-width: 0;
 }
 
 a {
@@ -23,9 +23,18 @@ h4 {
     margin-bottom: 0.5em;
     }
 
+h5 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
 h6 {
     font-size: 16px;
 }
+
+
 
  /*Header//////////////////////*/
 header {
@@ -43,7 +52,7 @@ header >article {
     text-transform: uppercase;
 }
 article >span {
-    color: mediumaquamarine;
+    color: #23ba9c;
     font-weight: 600;
 }
 
@@ -144,7 +153,7 @@ li:last-child {
 }
 
 h4 > span {
-    color: mediumaquamarine;
+    color: #23ba9c;
     font-weight: 600; 
 }
 
@@ -155,12 +164,12 @@ h4 > span {
 }
 
 .article_1 section > button {
-    background-color: mediumaquamarine;
+    background-color: #23ba9c;
     color: white;
     text-transform: uppercase;
     border-radius: 0.4em 0.4em 0.4em 0.4em;
-    width: 50%;
-    height: 40px;
+    width: 60%;
+    height: 60px;
     padding: 10 10 10 10;
     font-size: 24px;
     box-shadow: none;
@@ -202,7 +211,6 @@ h6 {
     padding-top: 8px;
     margin-left: 10px;
     margin-bottom: 3px;
-
 }
 
 .in_article_2 > img {
@@ -210,7 +218,7 @@ h6 {
     z-index: 1;
 }
 .line{
-    border-bottom-color: mediumaquamarine;
+    border-bottom-color: #28b89d;
     border-bottom-style: solid;
     border-bottom-width: thick;
     width: 43%;
@@ -227,13 +235,80 @@ h6 {
 }
 
 /*Article 3//////////////////////*/
-
-/*Article 4//////////////////////*/
-fieldset {
-    border: none;
+.line2 {
+    border-bottom-color: #28b89d;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    width: 25%;
+    margin-top: 5px;
+    margin-left: 80px;  
 }
-/*FOOTER//////////////////////*/
-/*
-button {
-    font-family: 'Raleway' !important;
+/*bacground-color:#26c7a9*/
+/*color c7c7c7*/
+/*zakup towaru color #949494
+serwis #8c8c8c
+
 */
+/*Article 4//////////////////////*/
+article_4{
+    height: 600px;
+    width: 100%;
+   
+}
+fieldset, fieldset > p {
+    display: inline-block;
+    color: #c4c4c4;
+}
+fieldset > p {
+    font-size: 20px;
+    margin-top: 50px;  
+}
+
+input, textarea, placeholder {
+    font-size: 33px;
+    width: 650px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    border: 1px solid #23ba9c;
+}
+input {
+     height: 70px;
+}
+textarea {
+     height: 210px;
+}
+.fieldset_1{
+    height: 300px;
+    width: 50%;
+}
+.fieldset_2 {
+    height: 300px; 
+    width: 35%; 
+    float: right;
+    margin-right: 60px;
+}
+fieldset img:nth-child(3) {
+    border: 1px solid #23ba9c;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 50px;
+    padding: 3px 3px 3px 0;
+}
+fieldset button  {
+    background-color: #23ba9c; 
+    font-size: 34px;
+    color: white;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    width: 70%;
+    height: 60px;
+    padding: 10 10 10 10;
+    margin-top: 40px;
+    float:left;
+    text-transform: uppercase;
+    
+}
+
+/*FOOTER//////////////////////*/
+
