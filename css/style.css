@@ -1,7 +1,32 @@
+
+
+/*Body/////////////////////////*/
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;  
 }
+
+input, button, textarea {
+   font: 20px Raleway;/*tym pozbyłam się stylowania domyślnego Arialem dla przycisków i pól. Hurra! :) */
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    }
+
+h6 {
+    font-size: 16px;
+}
+
  /*Header//////////////////////*/
 header {
     background-color: black;
@@ -14,35 +39,82 @@ header >article {
     display: inline-block;
     vertical-align: middle;
     line-height: 40px;
-    margin-left: 90px;
+    margin-left: 80px;
     text-transform: uppercase;
 }
 article >span {
     color: mediumaquamarine;
     font-weight: 600;
 }
+
 ul {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
     list-style-type: none;
     color: white;
-    width: 300px;
+    width: 500px;
     vertical-align: middle;
     line-height: 40px;
-    float: right;
-}
-ul.main_menu li {
-    display: inline-block;
-    margin-left: 10px;    
+    float: right; /*ułożenie listy w poziomie*/
 }
 
-ul.sub_menu{
-    display: none; /*chowanie menu/////////////////*/
+ul.main_menu > li {
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    height: 30px;
+    }
+
+
+
+ul > li > a {
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #3c3c3c;
 }
-ul.sub_menu li {
+
+.triangle{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 13px 13px 13px;
+border-color: transparent transparent black transparent;
+margin: 0 auto;
+margin-top: -1px;
+}
+
+ul.sub_menu {
+    display: none; 
+    padding: 0;
+    width: 110px;
+    position: absolute;
+    top:30px;
+    text-align: center;
+    background-color: white;
+    color: #f7f7f7;
+    margin-top: 13px;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul.sub_menu > li {
     display: block;
     text-transform: capitalize;
+    background-color: black;
 }
+
+li:first-child {
+border-top: none;
+}
+ 
+li:last-child {
+   border-bottom: none;
+}
+
+
 
 /*Article 1//////////////////////*/
 .article_1 {
@@ -50,60 +122,118 @@ ul.sub_menu li {
     height: 504px;
     background-color: #f7f7f7;
     background-image: linear-gradient(180deg, #f7f7f7, #d1d0d6);
-    position: relative;
-    
+
 }
 
 .article_1 >img {
     height: 341px;
-    position: absolute;
-    right: auto; left: 200px;
-    top: 90px;
+    right: auto; 
+    margin-left: 100px;
+    margin-top: 90px;
+    
     
 }
-.article_1 >section {
+.article_1 > section {
     width: 474px;
     height: 341px;
     display: inline-block;
     text-align: center;
-    position: absolute;
-    left: auto; right: 200px;
-    top: 90px;
-    
+    float: right; 
+    margin-right: 290px;
+    margin-top: 140px;
 }
-h4 {
-    text-transform: uppercase;
-    font-size: 40px;
-    display: inline-block;
-    font-weight: 500;
-    margin-bottom: 0.5em;
-    }
-h4 >span {
+
+h4 > span {
     color: mediumaquamarine;
     font-weight: 600; 
 }
 
-.article_1 >p {
+.article_1 > p {
     font-size: 14px;
     display: inline-block;
-    width: 180px;
+    width: 170px;
 }
 
-section input {
+.article_1 section > button {
     background-color: mediumaquamarine;
     color: white;
     text-transform: uppercase;
-    border-radius: 0.5em 0.5em 0.5em 0.5em;
-    width:35%;
+    border-radius: 0.4em 0.4em 0.4em 0.4em;
+    width: 50%;
     height: 40px;
+    padding: 10 10 10 10;
+    font-size: 24px;
     box-shadow: none;
-    
+    margin-top: 25px;
 }
 
 /*Article 2//////////////////////*/
+.clearfix:after { content: " "; display: block; clear: both; }
+
+.article_2 {
+    width: 98%;
+    height: 320px;
+    padding: 10px;
+
+}
+.in_article_2 {
+    width: 329px;
+    height: 225px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+.in_article_2 > div {
+    height: 50px;
+    display: block;
+    z-index: 2;
+    position: relative;
+    margin-top: 160px;
+    background: rgb( 244,244,244);
+    background-color: rgba( 244,244,244, 0.5);
+}
+
+h6 {
+    color: black;
+    font-weight: 600;
+    height: 16px; 
+    padding-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+
+}
+
+.in_article_2 > img {
+    position: absolute;
+    z-index: 1;
+}
+.line{
+    border-bottom-color: mediumaquamarine;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    width: 43%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.in_article_2 p:nth-child(1) {
+    font-weight: 600;
+   
+}
+.in_article_2 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /*Article 3//////////////////////*/
 
 /*Article 4//////////////////////*/
-
+fieldset {
+    border: none;
+}
 /*FOOTER//////////////////////*/
+/*
+button {
+    font-family: 'Raleway' !important;
+*/

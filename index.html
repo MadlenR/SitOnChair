@@ -2,40 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title> SIT ON CHAIR</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
-   <header>
+    
+<!-- HEADER ----------->
+    <header>
         <article> 
             sit <span>on</span> chair
         </article>
-        <ul class="main_menu" style="border: 1px solid pink">
-            <li> o firmie</li>
-                <ul class="sub_menu" style="border: 1px solid blue">
-                    <li> aktualności</li>
-                    <li> nasz team</li>
-                    <li> historia </li>
+        <ul class="main_menu">
+            <li><a href="#">o firmie</a>
+                <ul class="sub_menu">
+                    <div class="triangle"></div>
+                    <li><a href="#">aktualności </a></li>
+                    <li><a href="#"> nasz team </a></li>
+                    <li><a href> historia </a></li>
                 </ul>
-            <li> galeria</li>
-            <li> kontakt</li>
+            </li>
+            <li><a href="#"> galeria </a></li>
+            <li><a href="#"> kontakt </a></li>
        </ul>
     </header>
-    <article class="article_1" style="border: 1px solid green">
+  
+<!-- ARTICLE_1 ------------>
+    <article class="article_1">
        <img src="images/black_chair.png">
        <section>
             <h4> sit <span>on</span> our <span>chair</span></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum sagittis condimentum. Sed quis fermentum sapien, eu gravida nulla. Aliquam venenatis euismod eros non faucibus. Proin vitae hendrerit ex.</p>
-            <input type="button" value="zobacz więcej">
-       </section> 
-        
-        
+            <button>Zobacz więcej</button>
+       </section>     
    </article>
-   <article></article>
-   <article></article>
-   <article></article>
-   <footer></footer>
-
+    
+<!-- ARTICLE_2 ----------->    
+   <article class="article_2" style="border: 1px solid green">
+        <section class="in_article_2">
+            <img src="images/box1_img.jpg">
+            <div>
+                <h6> Chair CLAIR</h6>
+                <p class="line"></p>
+            </div>
+        </section>
+       
+        <section class="in_article_2">
+            <img src="images/box2_img.jpg" >
+            <div>
+                <h6> Chair MARGARITA</h6>
+                <p class="line"></p>
+            </div>
+        </section>
+        <section class="in_article_2">
+            <p>Finds all inputs</p>
+            <p class="line"></p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum sagittis condimentum. Sed quis fermentum sapien, eu gravida nulla. Donec vestibulum sagittis condimentum. Sed quis fermentum sapien, eu gravida nulla. <br /> <br />
+            Donec vestibulum sagittis condimentum. Sed quis fermentum sapien, eu gravida nulla.
+            </p>
+        </section>
+   </article>
+    
+<!-- ARTICLE_3 ------------->
+   <article class="article_3">
+        <section class="in_article_3">
+            <div class="circle"> </div>
+            <div class="circle_2"> </div>
+            <article class="container"> 
+                <p class="title"> BASIC PLAN</p>
+                <div class="inner_circle"> 
+                    <p>85<sup>99</sup></p>
+                    <p>PLN/MSC<p>
+                </div>
+                <P>Zakup towaru + dowóz </P>
+                <p>Serwis</p>
+                <p></p>
+                <button><a href="#">DOŁĄCZ</a></button>
+            </article>
+       </section>
+       <section class="in_article_3">
+       <article class="container"> 
+                <p class="title"> STANDARD PLAN</p>
+                <div class="inner_circle"> 
+                    <p>95<sup>99</sup></p>
+                    <p>PLN/MSC<p>
+                </div>
+                <P>Zakup towaru + dowóz </P>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+                <button><a href="#">DOŁĄCZ</a></button>
+            </article>
+       </section>
+        <section class="in_article_3">
+            <article class="container"> 
+                <p class="title"> ADVANCE PLAN</p>
+                <div class="inner_circle"> 
+                    <p>211<sup>00</sup></p>
+                    <p>PLN/MSC<p>
+                </div>
+                <p>Zakup towaru + dowóz </p>
+                <p>Serwis</p>
+                <p>Gwarancja 6 lat</p>
+                <p>Porady projektanta</p>
+                <button><a href="#">DOŁĄCZ</a></button>
+            </article>
+        </section>
+   </article>
+    
+<!-- ARTICLE_4 ----------->
+   <article class="article_4">
+        <form>
+            <fieldset class="fieldset_1">
+                <input type="text" name="Imię" placeholder="Imię"> <br />
+                <input type="text" name="email" placeholder="email"> <br />
+                <textarea placeholder="Wiadomość"></textarea>
+            </fieldset>
+            <fieldset class="fieldset_2">
+                <img src="images/red_chair.png">
+                <input type="checkbox" checked="checked">
+                <button type="submit">Wyślij</button>
+            </fieldset>
+        </form>
+    </article>
+    
+<!-- FOOTER ------------->
+   <footer>
+        <p> &copy Copyright 2014 | All Rights Reserved. -Sit On Chair 
+       </p>
+        <section>
+            <img src="images/flickr.png">
+            <img src="images/vimeo.png">
+            <img src="images/pinterest.png">
+            <img src="images/twitter.png">
+       </section>
+       <p>
+       SIT <span>ON </span> CHAIR
+       </p>
+   </footer>
 </body>
 </html>
