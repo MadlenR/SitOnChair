@@ -134,13 +134,44 @@ li:last-child {
 
 }
 
-.article_1 >img {
+#prev {
+
+    float:left;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-size: 80px;
+    color: #23ba9c;
+    display: inline-block;
+    background-color: transparent;
+}
+
+
+#next {
+    float: right;
+    margin-left: 50%;
+    margin-top: -280px;
+    margin-right: 120px;
+    font-size: 80px;
+    color: #23ba9c;
+    display: inline-block;
+    background-color: transparent;
+}
+
+
+.article_1 > ul > li {
     height: 341px;
-    right: auto; 
-    margin-left: 100px;
-    margin-top: 90px;
-    
-    
+    margin-top: 90px; 
+    display: none;
+}
+
+.article_1 ul{
+    list-style: none;
+    float: left;
+    margin-right: 0;
+}
+
+.article_1 .visible{
+    display: inline-block;
 }
 .article_1 > section {
     width: 474px;
@@ -148,7 +179,7 @@ li:last-child {
     display: inline-block;
     text-align: center;
     float: right; 
-    margin-right: 290px;
+    margin-right: 250px;
     margin-top: 140px;
 }
 
@@ -303,6 +334,8 @@ h6 {
 .container > div > p:nth-child(1) {
      font-size: 45px;
      width: 70%;
+     font-weight: 600;
+     opacity: 0.7;
 }
 .container > div> p > sup {
     font-size: 16px;
@@ -313,7 +346,8 @@ h6 {
 
 .container > div > p:nth-child(2) {
     font-size: 16px;
-    width: 70%;   
+    width: 70%; 
+    
 }
 .container > p {
     display: inline-block;
@@ -387,6 +421,10 @@ h6 {
 }
 .in_article_3B > .container > p:nth-child(5n-1){
     background-color: #ebebeb;
+}
+.in_article_3B > .container > .inner_circle {
+    color: #26c7a9;
+    
 }
 /* Kołko w kółku/////////////////////////////////////////*/
 .circle {
