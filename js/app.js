@@ -36,4 +36,34 @@ document.addEventListener("DOMContentLoaded", function (){
         lis[counterPic].classList.add("visible");
         
     });
+    
+    //////////////////// event dla myszki//////////////
+    
+    var article2 = document.querySelector(".article_2");
+    
+    var containers = article2.querySelectorAll(".hide");
+
+
+//    console.log (containers); 
+//    znalazłam elementy, dla których chcę zdefiniować event
+    
+//    console.log(imgContainers);
+  
+    
+    for (var i=0; i< containers.length; i++) {
+        containers[i].addEventListener("mouseover", function(event){
+            console.log("hidden");
+            this.nextElementSibling.style.display= "none";
+            event.stopImmediatePropagation();
+        });
+    };
+          
+    for (var i = 0; i <  containers.length; i++ ){
+        containers[i].addEventListener("mouseout",function(event){
+            console.log("visible");
+            this.nextElementSibling.style.display="block";
+            event.stopImmediatePropagation();
+        });
+    }
+
 });

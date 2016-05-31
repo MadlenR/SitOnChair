@@ -161,13 +161,17 @@ li:last-child {
 .article_1 > ul > li {
     height: 341px;
     margin-top: 90px; 
-    display: none;
+    
 }
 
 .article_1 ul{
     list-style: none;
     float: left;
     margin-right: 0;
+}
+
+.article_1 li {
+    display: none;
 }
 
 .article_1 .visible{
@@ -234,7 +238,9 @@ h4 > span {
     background: rgb( 244,244,244);
     background-color: rgba( 244,244,244, 0.5);
 }
-
+.mouse {
+    display: block;
+}
 h6 {
     color: black;
     font-weight: 600;
